@@ -42,11 +42,6 @@ jar {
     }
 }
 
-jacoco {
-    toolVersion = "0.7.6.201602180812"
-    reportsDir = file("$buildDir/customJacocoReportDir")
-}
-
 jacocoTestReport {
     reports {
             xml.enabled true
