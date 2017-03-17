@@ -29,7 +29,7 @@ public class VarastoTest {
     public void ymKonstruktoriToimiiNegatiivisella(){
         Varasto varasto1 = new Varasto(-1);
         
-        assertEquals(7, varasto1.getTilavuus(), vertailuTarkkuus);
+        assertEquals(0, varasto1.getTilavuus(), vertailuTarkkuus);
         assertEquals(0, varasto1.getSaldo(), vertailuTarkkuus);
         
         varasto1 = new Varasto(0);
