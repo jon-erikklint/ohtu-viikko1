@@ -21,6 +21,10 @@ repositories {
     jcenter()
 }
 
+plugins {
+    id 'com.github.kt3k.coveralls' version '2.8.1'
+}
+
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
     compile 'com.google.guava:guava:20.0'
@@ -45,8 +49,8 @@ jacoco {
 
 jacocoTestReport {
     reports {
-            xml.enabled false
-            csv.enabled false
+            xml.enabled true
+            csv.enabled true
             html.destination "${buildDir}/reports/jacoco"
     }
 }
